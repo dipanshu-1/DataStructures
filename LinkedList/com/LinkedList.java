@@ -48,9 +48,9 @@ public class LinkedList {
         // Return the list by head
         return list;
     }
-    public static void printList(LinkedList list)
+    public static void printList(Node head)
     {
-        Node currNode = list.head;
+        Node currNode = head;
 
         System.out.print("LinkedList: ");
 
@@ -77,6 +77,6 @@ public class LinkedList {
             list=insert(list, sc.nextInt());
 
         System.out.println("Linked List is: ");
-        printList(list);
+        printList(list.head);
     }
 }
